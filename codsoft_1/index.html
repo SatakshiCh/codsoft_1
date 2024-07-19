@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+       
+        nav {
+            margin: 0px 0;
+            padding: 20px;
+            text-align: center;
+        }
+        nav a {
+            color: #a0fc00;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        section {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .about img {
+            width: 150px;
+            border-radius: 50%;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .skill {
+            flex: 1 1 calc(33% - 40px);
+            background-color: rgb(142, 255, 4);
+            padding: 20px;
+            margin: 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .skill:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+        .skill img {
+            width: 60px;
+            height: 60px;
+            margin-bottom: 10px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-between;
+        }
+        .project {
+            flex: 1 1 calc(50% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            background-color: rgb(163, 255, 3);
+            border-radius: 8px;
+            text-align: center;
+        }
+        .project img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .project h3 {
+            margin-top: 10px;
+        }
+        .read-more {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: purple;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body style="background-color: #333;">
+    <nav style="background-color: black;"> 
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <header>
+        <p style="font-size: 30px; color: #85ff02;">Hello there,</p>
+        <p style="font-size: 70px; font-family:Arial, Helvetica, sans-serif ; color: #73f600; font-weight: bold ;">I'm Satakshi</p>
+    
+    </header>
+
+    <section id="about" class="about" >
+        <h1 style="text-align: center; color: rgb(134, 237, 8)">About Me</h1>
+        <p style="color: aliceblue; text-align: center;"> My name is Satakshi Chauhan. I am a second year undergraduate student at IIT Kharagpur enrolled in Bachelors' of Technology course. </p>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2 style="color: #73f600;">Skills</h2>
+        <div class="skill">
+            <img src="html logo.webp" alt="HTML Icon">
+            <h3>HTML</h3>
+            <p>Experienced in creating structured, semantic, and accessible web pages.</p>
+        </div>
+        <div class="skill">
+            <img src="css logo.webp" alt="CSS Icon">
+            <h3>CSS</h3>
+            <p>Proficient in styling and layout with advanced techniques and responsive design.</p>
+        </div>
+        <div class="skill">
+            <img src="js logo.webp" alt="JavaScript Icon">
+            <h3>JavaScript</h3>
+            <p>Skilled in scripting to create dynamic, interactive web applications.</p>
+        </div>
+
+    </section>
+
+    <section id="projects" class="projects">
+        <h2 style="color: #73f600;">Projects</h2>
+        <div class="project">
+            <h3>Music Player Website</h3>
+            <a href="https://satakshich.github.io/Ktj_TASK/KTJ_workshop/ktj.html"> Visit the Website</a>
+            <p>
+                This project is a music player website designed using only HTML and CSS. It demonstrates my ability to create a functional and visually appealing web application without relying on JavaScript or backend technologies.
+            </p>
+            <a href="#read-more-music-player" class="read-more">Read More</a>
+        </div>
+        <div class="project">
+            <h3>Tic Tac Toe Game</h3>
+            <a href="https://satakshich.github.io/Ktj_task2/ktj_task_2/index.html"> Visit the Website</a>
+            <p>
+                 A classic Tic Tac Toe game using HTML, CSS, and JavaScript. Features include interactive gameplay, win/draw detection, and responsive design for both desktop and mobile devices.
+            </p>
+            <a href="#read-more-project-2" class="read-more">Read More</a>
+        </div>
+    </section>
+
+    <section id="resume" class="resume">
+        <h2 style="color: #73f600;">Resume :</h2>
+        <a href="https://docs.google.com/document/d/1CFod2bXqXK4IE8IE8JauO6wI0P9tEEkmfxrj2w8JD0Y/edit?usp=share_link" download style="color: aliceblue;">Download My Resume</a>
+    </section>
+
+    <section id="contact" class="contact" style="background-color: #b3fa75;" >
+        <h2 style="color: #000000; text-align: center;">Contact</h2>
+        <p>Email: satakshiappleid09@gmail.com</p>
+        <p>Phone: 9113376876</p>
+    </section>
+
+    <footer style="background-color: #000000;">
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
